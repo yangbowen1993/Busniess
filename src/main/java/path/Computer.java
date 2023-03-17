@@ -8,6 +8,10 @@ public class Computer {
 
     public static int RED_MI = 2;
 
-    public static int FLAG = RED_MI;
+    public static int FLAG = HOME_PC;
+
+    public static String PATH[] = {"",
+            "C:\\Users\\12713\\Downloads\\",
+            "C:\\Users\\ybw\\Downloads\\"};
 
 }
