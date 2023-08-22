@@ -14,7 +14,7 @@ public class XiaoshouColorExcel {
     public static int START_ROW = 1;
     //要读取的列
     //厂名、款号、颜色、件数
-    public static int[] LINES = {1, 3, 8};
+    public static int[] LINES = {1, 3, 10};
 
     public static void main(String[] args) {
         try {
@@ -40,7 +40,8 @@ public class XiaoshouColorExcel {
             }
 
 
-            String huohao = oldhuohao.split("-")[1];
+            //销售货号  232-
+            String huohao = oldhuohao.substring(4);
 
 
             Cell cell2 = sheetRow.getCell(LINES[1]);

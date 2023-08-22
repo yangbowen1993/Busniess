@@ -50,8 +50,9 @@ public class CaipianColorExcel {
             if (filter(oldhuohao)) {
                 continue;
             }
-            //货号
-            String huohao = oldhuohao.split("-")[1];
+
+            //货号,TBCB-
+            String huohao = oldhuohao.substring(5);
 
             Cell cell3 = sheetRow.getCell(LINES[2]);
             //颜色
