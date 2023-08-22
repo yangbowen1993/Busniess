@@ -22,7 +22,7 @@ public class ColorKucunResult {
         //读销售
         List<XiaoshouColorInfo> xiaoshouList = XiaoshouAnalyse.getXiaoshouList();
 
-
+        System.out.println(xiaoshouList.toString());
         HSSFWorkbook workbook = new HSSFWorkbook();
         HSSFSheet sheet = workbook.createSheet("裁片颜色");
         int row = 0;

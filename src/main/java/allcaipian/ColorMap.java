@@ -40,8 +40,9 @@ public class ColorMap {
             String guanjiapoColor = cell2.toString();
 
             Cell cell3 = sheetRow.getCell(LINES[2]);
+
             //款号
-            String qinsiColor = cell3.toString();
+            String qinsiColor = cell3==null?"":cell3.toString();
 
             map.put(tempKuanhao + "-" + guanjiapoColor, tempKuanhao + "-" + qinsiColor);
         }
