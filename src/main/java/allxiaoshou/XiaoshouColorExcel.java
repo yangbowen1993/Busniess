@@ -14,7 +14,9 @@ public class XiaoshouColorExcel {
     public static int START_ROW = 1;
     //要读取的列
     //厂名、款号、颜色、件数
+
     public static int[] LINES = {1, 3, 11};
+
 
     public static void main(String[] args) {
         try {
