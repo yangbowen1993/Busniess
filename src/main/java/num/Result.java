@@ -16,6 +16,10 @@ import java.util.Map;
 
 public class Result {
     public static void main(String[] args) throws IOException {
+        write();
+    }
+
+    public static void write() throws IOException {
         Map<String, Integer> caipian = ReadCaipian.read();
         Map<String, Integer> xiaoshou = ReadXiaoshou.read();
         ArrayList<OBJ> objs = new ArrayList<>();

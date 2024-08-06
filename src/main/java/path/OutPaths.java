@@ -26,4 +26,13 @@ public class OutPaths {
         return Computer.PATH[Computer.FLAG] + "库存.xlsx";
     }
 
+    public static String getFactoryKucunn(){
+        return Computer.PATH[Computer.FLAG] + "工厂剩余库存.xlsx";
+    }
+
+
+    public static String getFactoryChongrong(){
+        return Computer.PATH[Computer.FLAG] + "工厂充绒情况.xlsx";
+    }
+
 }

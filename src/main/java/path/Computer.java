@@ -10,7 +10,7 @@ public class Computer {
 
     public static int FLAG = HOME_PC;
 
-    public static String PATH[] = {"",
+    public static String PATH[] = {"/Users/yangbowen/Downloads/",
             "C:\\Users\\12713\\Downloads\\",
             "C:\\Users\\ybw\\Downloads\\"};
 

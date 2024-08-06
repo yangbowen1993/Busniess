@@ -31,7 +31,8 @@ public class ColorMap {
                 //款号
                 String kuanhao = cell1.toString();
                 if (kuanhao != null && !kuanhao.equals("")) {
-                    tempKuanhao = kuanhao;
+
+                    tempKuanhao = kuanhao.substring(0,3);
                 }
             }
 
@@ -40,8 +41,9 @@ public class ColorMap {
             String guanjiapoColor = cell2.toString();
 
             Cell cell3 = sheetRow.getCell(LINES[2]);
+
             //款号
-            String qinsiColor = cell3 == null ? "" : cell3.toString();
+            String qinsiColor = cell3==null?"":cell3.toString();
 
             map.put(tempKuanhao + "-" + guanjiapoColor, tempKuanhao + "-" + qinsiColor);
         }
